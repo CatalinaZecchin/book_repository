@@ -13,5 +13,5 @@ public interface BookRepository extends JpaRepository<Book, Long> {
         List<Book> findByAuthor_Name(String name);
         List<Book> findByTitleContainingIgnoreCase(String title);
         List<Book> findByGenre(String genre);
-        List<Book> findByRatingGreaterThanEqual(int rating);
+        List<Book> findByRatingGreaterThanEqual(double rating);
 }
